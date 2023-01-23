@@ -3,7 +3,7 @@
 ![License](https://img.shields.io/badge/License-MIT-green)
 [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
-# Key findings: Most of the bookings are done by 2 adults in the months of Asugust, September and October, requesting no parking spot and choosing Room Type 1 and Meal Plan 1. Most of them also do not make any special requests or have any previous cancellations.
+# Key findings: Most of the bookings are done by 2 adults in the months of August, September and October, requesting no parking spot and choosing Room Type 1 and Meal Plan 1. Most of them also do not make any special requests or have any previous cancellations.
 
 ## Authors
 
