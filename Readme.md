@@ -130,7 +130,7 @@ To explore the notebook file [here](https://nbviewer.org/github/vashishtmarhwal/
 ```
 
 ├── assets
-│   ├── confusion       .png                      <- confusion matrix image used in the README.
+│   ├── confusion.png                             <- confusion matrix image used in the README.
 │   ├── heatmap.png                               <- heatmap image used in the README.
 │   ├── roc.png                                   <- ROC image used in the README.
 │
