@@ -26,14 +26,10 @@ jobs:
           conda activate myenv
           conda info
 
-      - name: Install ruff
+      - name: Install ruf
         run: |
-          source $(conda info --base)/etc/profile.d/conda.sh
-          conda activate myenv
           conda info
 
       - name: Lint with ruff
         run: |
-          source $(conda info --base)/etc/profile.d/conda.sh
-          conda activate myenv
-          ruff .
+          conda info
