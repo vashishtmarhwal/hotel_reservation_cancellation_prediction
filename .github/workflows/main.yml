@@ -20,21 +20,20 @@ jobs:
       - name: Create conda environment
         run: conda env create -f environment.yml
 
-      - name: Activate conda environment
+      - name: Activate conda environment and verify
         run: |
-          echo "source $(conda info --base)/etc/profile.d/conda.sh" >> $GITHUB_ENV
-          echo "conda activate myenv" >> $GITHUB_ENV
-          source $GITHUB_ENV
+          source $(conda info --base)/etc/profile.d/conda.sh
+          conda activate myenv
           conda info
 
       - name: Install ruff
         run: |
-          source $GITHUB_ENV
+          source $(conda info --base)/etc/profile.d/conda.sh
           conda activate myenv
           conda install -c conda-forge ruff
 
       - name: Lint with ruff
         run: |
-          source $GITHUB_ENV
+          source $(conda info --base)/etc/profile.d/conda.sh
           conda activate myenv
           ruff .
