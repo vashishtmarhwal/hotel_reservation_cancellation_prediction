@@ -22,18 +22,19 @@ jobs:
 
       - name: Activate conda environment
         run: |
-          source $CONDA/../etc/profile.d/conda.sh
-          conda activate <your-env-name>
+          echo "source $(conda info --base)/etc/profile.d/conda.sh" >> $GITHUB_ENV
+          echo "conda activate myenv" >> $GITHUB_ENV
+          source $GITHUB_ENV
           conda info
 
       - name: Install ruff
         run: |
-          source $CONDA/../etc/profile.d/conda.sh
-          conda activate <your-env-name>
+          source $GITHUB_ENV
+          conda activate myenv
           conda install -c conda-forge ruff
 
       - name: Lint with ruff
         run: |
-          source $CONDA/../etc/profile.d/conda.sh
-          conda activate <your-env-name>
+          source $GITHUB_ENV
+          conda activate myenv
           ruff .
