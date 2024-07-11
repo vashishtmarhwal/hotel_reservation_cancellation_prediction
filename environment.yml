@@ -11,6 +11,5 @@ dependencies:
   - scikit-learn
   - jupyter
   - seaborn
-  - requests
   - flask
   - pytest
